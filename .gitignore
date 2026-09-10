@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Generated data and trained model
+data/housing.csv
+models/*.joblib
