@@ -2,63 +2,77 @@
 
 A practical Machine Learning portfolio covering the full workflow from **data preparation to model evaluation**.
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+## 🚀 Featured Project: House Price Prediction
 
-## 🧠 Core Areas
+An end-to-end regression system that predicts house prices from property characteristics. It includes reproducible data generation, preprocessing, model training, evaluation, model persistence, inference and a Streamlit web app.
 
-- Linear & Multiple Linear Regression
-- Logistic Regression
-- K-Nearest Neighbours (KNN)
-- Support Vector Machines (SVM)
-- Decision Trees
-- Random Forest
-- Naive Bayes
-- Neural Networks
-- Data preprocessing & feature engineering
-- Model evaluation and error analysis
-- Data visualisation
-
-## 📁 Recommended Structure
+### Project structure
 
 ```text
 Machine-Learning/
-├── notebooks/
-│   ├── regression/
-│   ├── classification/
-│   └── neural_networks/
-├── datasets/
-├── src/
-├── visualisations/
+├── app.py
 ├── requirements.txt
-└── README.md
+├── README.md
+├── .gitignore
+├── data/
+│   └── .gitkeep
+├── models/
+│   └── .gitkeep
+├── src/
+│   ├── __init__.py
+│   ├── generate_data.py
+│   ├── train.py
+│   └── predict.py
+└── tests/
+    └── test_pipeline.py
 ```
 
-## 🔬 Project Workflow
+### Quick start
 
-**Problem → Data → EDA → Preprocessing → Features → Model → Evaluation → Insights**
+```bash
+python -m venv .venv
+.venv\Scripts\activate       # Windows
+# source .venv/bin/activate   # macOS/Linux
+pip install -r requirements.txt
+python -m src.generate_data
+python -m src.train
+streamlit run app.py
+pytest -q
+```
 
-Each portfolio project should clearly explain the business/problem statement, dataset, methodology, metrics and final conclusions.
+### ML workflow
 
-## 📊 Evaluation
+**Problem → Data → EDA → Preprocessing → Features → Model → Evaluation → Inference**
 
-Typical metrics include:
+The project uses a scikit-learn `Pipeline` and `ColumnTransformer`, so preprocessing and the model are saved together and inference uses exactly the same transformations as training.
 
-- Regression: MAE, MSE, RMSE, R²
-- Classification: Accuracy, Precision, Recall, F1-score, ROC-AUC
-- Imbalanced data: confusion matrix and class-aware metrics
+### Features
 
-## 🛠️ Stack
+- Area in square feet
+- Bedrooms and bathrooms
+- Property age
+- Distance from city centre
+- Location
+- Parking availability
+- Furnishing status
 
-**Python:** Pandas • NumPy • Matplotlib • Seaborn  
-**ML:** Scikit-learn • Keras/TensorFlow  
-**Environment:** Jupyter Notebook • Google Colab • GitHub
+### Metrics
 
-## 🎯 Goal
+The training script reports **MAE, RMSE and R²** on a held-out test set.
 
-Turn Machine Learning fundamentals into **clean, reproducible and job-ready projects** with strong documentation and measurable results.
+### Stack
 
----
+**Python:** Pandas • NumPy  
+**ML:** Scikit-learn • Joblib  
+**App:** Streamlit  
+**Testing:** Pytest
+
+### Future improvements
+
+- Replace synthetic data with a real housing dataset
+- Add cross-validation and hyperparameter tuning
+- Add SHAP-based explainability
+- Add Docker and CI/CD
+- Deploy the app to the cloud
 
 ⭐ **Experiment → Evaluate → Improve → Build.**
