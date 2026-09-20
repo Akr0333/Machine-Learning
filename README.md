@@ -1,80 +1,65 @@
 # 🤖 Machine Learning Portfolio
 
-A practical Machine Learning portfolio covering the full workflow from **data preparation to model evaluation, inference and deployment**.
+A practical Machine Learning portfolio covering **data preparation, analytics, prediction, evaluation and deployment**.
 
-A practical Machine Learning portfolio covering the full workflow from **data preparation to model evaluation**.
+## 📈 Flagship: Customer Intelligence & Churn Analytics
 
-## 🚀 Featured Project: House Price Prediction
+An end-to-end **Data Analytics + ML** system answering a realistic business question:
 
-An end-to-end regression system that predicts house prices from property characteristics. It includes reproducible data generation, preprocessing, model training, evaluation, model persistence, inference and a Streamlit web app.
+> Which customers are likely to churn, why are they leaving, and where should retention efforts focus?
 
-### Project structure
+### Workflow
 
-```text
-Machine-Learning/
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── data/
-│   └── .gitkeep
-├── models/
-│   └── .gitkeep
-├── src/
-│   ├── __init__.py
-│   ├── generate_data.py
-│   ├── train.py
-│   └── predict.py
-└── tests/
-    └── test_pipeline.py
-```
+**Business Question → SQL → Python EDA → Feature Engineering → ML → Evaluation → Dashboard → Business Insight**
 
-### Quick start
+### Includes
+
+- SQL business analytics and KPIs
+- Reproducible customer-data generation
+- Logistic Regression churn model
+- Precision, recall, F1 and ROC-AUC evaluation
+- Revenue-at-risk analysis
+- Streamlit dashboard
+- High-value customer risk table
+- Reproducible project documentation
+
+### Run it
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate       # Windows
-# source .venv/bin/activate   # macOS/Linux
+cd flagship_customer_analytics
 pip install -r requirements.txt
-python -m src.generate_data
-python -m src.train
+python src/generate_data.py
+python src/train.py
 streamlit run app.py
-pytest -q
 ```
+
+See [flagship_customer_analytics/README.md](flagship_customer_analytics/README.md) for the full business and technical breakdown.
+
+---
+
+## 🏠 House Price Prediction
+
+An end-to-end regression system with preprocessing, model training, evaluation, model persistence and Streamlit inference.
 
 ### ML workflow
 
 **Problem → Data → EDA → Preprocessing → Features → Model → Evaluation → Inference**
 
-The project uses a scikit-learn `Pipeline` and `ColumnTransformer`, so preprocessing and the model are saved together and inference uses exactly the same transformations as training.
+## 🧰 Stack
 
-### Features
-
-- Area in square feet
-- Bedrooms and bathrooms
-- Property age
-- Distance from city centre
-- Location
-- Parking availability
-- Furnishing status
-
-### Metrics
-
-The training script reports **MAE, RMSE and R²** on a held-out test set.
-
-### Stack
-
-**Python:** Pandas • NumPy  
-**ML:** Scikit-learn • Joblib  
-**App:** Streamlit  
+**Python:** Pandas • NumPy
+**ML:** Scikit-learn • Joblib
+**Analytics:** SQL • Pandas
+**Visualisation:** Matplotlib • Seaborn • Plotly
+**Apps:** Streamlit
 **Testing:** Pytest
 
-### 🔮 Future Improvements
+## 🔮 Roadmap
 
-- Replace synthetic data with a real housing dataset
-- Add cross-validation and hyperparameter tuning
 - Add SHAP-based explainability
 - Add Docker and CI/CD
-- Deploy the app to the cloud
+- Add automated model monitoring
+- Deploy flagship dashboard
+- Add real-world datasets
 
-⭐ **Experiment → Evaluate → Improve → Build.**
+⭐ **Analyse → Model → Explain → Deploy**
