@@ -1,4 +1,6 @@
-# Machine Learning 🤖
+# 🤖 Machine Learning Portfolio
+
+A practical Machine Learning portfolio covering the full workflow from **data preparation to model evaluation, inference and deployment**.
 
 A practical Machine Learning portfolio covering the full workflow from **data preparation to model evaluation**.
 
@@ -67,7 +69,7 @@ The training script reports **MAE, RMSE and R²** on a held-out test set.
 **App:** Streamlit  
 **Testing:** Pytest
 
-### Future improvements
+### 🔮 Future Improvements
 
 - Replace synthetic data with a real housing dataset
 - Add cross-validation and hyperparameter tuning
