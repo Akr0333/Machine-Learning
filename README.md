@@ -75,3 +75,15 @@ The repository also contains smaller ML and Python projects for experimentation 
 ### Portfolio principle
 
 **Analyse → Model → Explain → Deploy**
+
+
+## 📸 Project Demo
+
+> Add dashboard screenshots, model evaluation charts and a short demo GIF here so recruiters can understand the result before reading the code.
+
+### Suggested visuals
+- Problem / dataset overview
+- KPI or EDA chart
+- Model evaluation (confusion matrix / ROC-AUC where applicable)
+- Final dashboard or application
+
