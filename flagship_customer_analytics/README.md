@@ -1,81 +1,113 @@
 # 📈 Customer Intelligence & Churn Analytics
 
-An end-to-end **Data Analytics + Machine Learning** project designed around a realistic business question:
+**End-to-end Data Analytics + Machine Learning portfolio project**
 
-> Which customers are likely to churn, why are they leaving, and where should the business focus retention efforts?
+> **Business goal:** identify customers at risk of churn, understand the drivers behind that risk, and turn model output into actionable retention insights.
 
-## 🎯 Business Goals
+## 🎯 Why this project matters
 
-- Monitor customer revenue and engagement
-- Identify churn patterns by segment
-- Quantify important churn drivers
-- Predict customers at risk of leaving
-- Turn model output into actionable retention insights
+A model score alone is not enough for a business analyst or data scientist.
+
+This project connects:
+
+**SQL → Data Analysis → Machine Learning → Evaluation → Business Insights → Dashboard**
 
 ## 🔄 End-to-End Workflow
 
-`Raw Data → SQL Analysis → Python EDA → Feature Engineering → ML → Evaluation → Business Insights → Dashboard`
+1. Generate / prepare customer data
+2. Analyse KPIs with SQL
+3. Clean and explore data with Python
+4. Engineer predictive features
+5. Train a churn classification model
+6. Evaluate precision, recall, F1 and ROC-AUC
+7. Segment customers by risk
+8. Estimate revenue at risk
+9. Explore results through a Streamlit dashboard
 
-## 🧰 Stack
+## 🧠 Skills Demonstrated
 
-**Analytics:** SQL, Pandas, NumPy  
-**Visualisation:** Matplotlib, Seaborn, Plotly  
-**Machine Learning:** Scikit-learn  
-**Dashboard:** Streamlit  
-**Engineering:** Git, GitHub, Pytest
+### Data Analytics
+- Pandas / NumPy
+- EDA
+- KPI analysis
+- Segmentation
+- Revenue-at-risk analysis
 
-## 📊 Analytics Layer
+### SQL
+- JOINs
+- CTEs
+- Aggregations
+- CASE expressions
+- Window functions
 
-The SQL analysis covers:
-
-- Revenue by customer segment
-- Monthly recurring revenue
-- Churn rate
-- Average revenue per customer
-- Tenure analysis
-- Contract and payment-method analysis
-- High-value customers at risk
-
-## 🤖 ML Layer
-
-Candidate models:
-
+### Machine Learning
+- Classification
+- Feature engineering
 - Logistic Regression
-- Decision Tree
-- Random Forest
-- Gradient Boosting
+- Model evaluation
+- Probability-based risk scoring
 
-Evaluation includes:
+### Engineering
+- Streamlit
+- Pytest
+- Docker
+- GitHub Actions
+- Reproducible project structure
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
-- Confusion matrix
+## 📊 Key Business Outputs
 
-For churn-risk use cases, the project explicitly considers **recall and ROC-AUC alongside accuracy**, because missing a genuinely at-risk customer can be costly.
+The dashboard is designed around questions such as:
 
-## 💼 Business Output
+- How many customers are high-risk?
+- Which customer segments contribute most to potential churn?
+- Which characteristics are associated with higher risk?
+- What revenue is potentially exposed?
+- Where should a retention team prioritise investigation?
 
-The final output is designed to answer:
+## 📁 Structure
 
-1. Who is churning?
-2. Which customer segments have the highest risk?
-3. Which factors are associated with churn?
-4. How much revenue is exposed?
-5. Which customers should be prioritised for retention?
+```text
+flagship_customer_analytics/
+├── app.py
+├── train.py
+├── explain.py
+├── generate_data.py
+├── sql/
+├── data/
+├── models/
+├── tests/
+├── requirements.txt
+├── Dockerfile
+└── README.md
+```
 
-## 🚀 Roadmap
+## ▶️ Quick Start
 
-- [x] Project architecture
-- [x] SQL analytics layer
-- [x] Python analysis layer
-- [x] ML training workflow
-- [x] Dashboard structure
-- [ ] Add production customer dataset
-- [ ] Add model explainability
-- [ ] Deploy dashboard
-- [ ] Add automated model monitoring
+```bash
+pip install -r requirements.txt
+python generate_data.py
+python train.py
+streamlit run app.py
+```
 
-This project demonstrates the complete path from **business question → data → analysis → prediction → decision support**.
+## 💼 Interview Talking Points
+
+Be ready to explain:
+
+- Why churn is a classification problem
+- Why accuracy alone can be misleading
+- Precision vs recall for retention use cases
+- How feature engineering affects model quality
+- How model probabilities become business risk segments
+- How SQL and Python work together in an analyst workflow
+
+## 🔮 Next Improvements
+
+- SHAP model explanations
+- Hyperparameter optimisation
+- Model monitoring
+- Drift detection
+- Interactive cohort analysis
+- Production deployment
+
+**Portfolio principle: Business Question → Evidence → Model → Insight → Action**
