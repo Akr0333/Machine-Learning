@@ -1,65 +1,77 @@
 # 🤖 Machine Learning Portfolio
 
-A practical Machine Learning portfolio covering **data preparation, analytics, prediction, evaluation and deployment**.
+A practical ML portfolio focused on **business problems, predictive modelling, evaluation and deployment**.
 
-## 📈 Flagship: Customer Intelligence & Churn Analytics
+> **Portfolio focus:** turn data into predictions that can be explained and used.
 
-An end-to-end **Data Analytics + ML** system answering a realistic business question:
+## ⭐ Featured Project — Customer Intelligence & Churn Analytics
 
-> Which customers are likely to churn, why are they leaving, and where should retention efforts focus?
+### Business Question
 
-### Workflow
+**Which customers are likely to churn, why are they at risk, and where should retention efforts focus?**
 
-**Business Question → SQL → Python EDA → Feature Engineering → ML → Evaluation → Dashboard → Business Insight**
+### End-to-End Workflow
 
-### Includes
+`Business Question → SQL → Python EDA → Feature Engineering → ML → Evaluation → Dashboard → Business Insight`
 
-- SQL business analytics and KPIs
-- Reproducible customer-data generation
-- Logistic Regression churn model
-- Precision, recall, F1 and ROC-AUC evaluation
+### What This Demonstrates
+
+- SQL-based business KPIs
+- Data preparation and exploratory analysis
+- Feature engineering
+- Logistic Regression classification
+- Precision, Recall, F1 and ROC-AUC evaluation
 - Revenue-at-risk analysis
+- Customer risk segmentation
 - Streamlit dashboard
-- High-value customer risk table
-- Reproducible project documentation
+- Automated tests and CI
+- Reproducible project structure
 
-### Run it
-
-```bash
-cd flagship_customer_analytics
-pip install -r requirements.txt
-python src/generate_data.py
-python src/train.py
-streamlit run app.py
-```
-
-See [flagship_customer_analytics/README.md](flagship_customer_analytics/README.md) for the full business and technical breakdown.
+**[Open the flagship project →](https://github.com/Akr0333/Machine-Learning/tree/main/flagship_customer_analytics)**
 
 ---
 
 ## 🏠 House Price Prediction
 
-An end-to-end regression system with preprocessing, model training, evaluation, model persistence and Streamlit inference.
+An end-to-end regression project covering:
 
-### ML workflow
+`Data → EDA → Preprocessing → Feature Engineering → Model → Evaluation → Inference`
 
-**Problem → Data → EDA → Preprocessing → Features → Model → Evaluation → Inference**
+Includes model persistence and a Streamlit inference workflow.
 
-## 🧰 Stack
+---
 
-**Python:** Pandas • NumPy
-**ML:** Scikit-learn • Joblib
-**Analytics:** SQL • Pandas
-**Visualisation:** Matplotlib • Seaborn • Plotly
-**Apps:** Streamlit
-**Testing:** Pytest
+## 🧰 Technical Stack
 
-## 🔮 Roadmap
+| Area | Tools |
+|---|---|
+| Language | Python |
+| Data | Pandas, NumPy |
+| ML | Scikit-learn |
+| Visualisation | Matplotlib, Seaborn, Plotly |
+| Analytics | SQL, Pandas |
+| Apps | Streamlit |
+| Testing | Pytest |
+| Engineering | GitHub Actions, Docker |
 
-- Add SHAP-based explainability
-- Add Docker and CI/CD
-- Add automated model monitoring
-- Deploy flagship dashboard
-- Add real-world datasets
+---
 
-⭐ **Analyse → Model → Explain → Deploy**
+## 📁 Portfolio Structure
+
+`flagship_customer_analytics/` contains the most complete project in this repository.
+
+The repository also contains smaller ML and Python projects for experimentation and learning.
+
+---
+
+## 🚀 What I'm Building Next
+
+- Model explainability with SHAP
+- Model monitoring and drift checks
+- More real-world datasets
+- Production-style deployment
+- Stronger ML evaluation and experiment tracking
+
+### Portfolio principle
+
+**Analyse → Model → Explain → Deploy**
